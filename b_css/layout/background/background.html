@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background.html</title>
+  <style>
+    .background {
+      width: 100px;
+      height: 150px;
+      padding: 20px;
+      border: 5px dotted #222;
+      background-color: antiquewhite;
+      display: inline-block;
+    }
+
+    #border { background-clip: border-box;}
+    #padding { background-clip: padding-box;}
+    #content { background-clip: content-box;}
+
+    /* 배경이미지 삽입 */
+    #imgs{
+      width: 100%;
+      height: 1000px;
+
+      border: 2px solid black;
+    }
+
+    .img{
+      width: 100%;
+      height: 100%;
+      /* 배경이미지를 삽입하는 속성: url('이미지 경로')
+        - 웹 문서에 보여질 이미지에 대한 경로 삽입
+
+        >> 절대 경로 / 상대경로 모두 사용 가능
+      */
+      /* background-image: url(../../../a_html/images/dog01.jpg); */
+      background-image: url(https://cdn.pixabay.com/photo/2022/05/24/02/51/flowers-7217498_640.jpg);
+      background-repeat: no-repeat;
+      /* background-position: 50px 20px;  */
+      background-origin: border-box;
+      /* 수평위치 수직위치 박스모델 하던 습관이 있어서 헷갈릴 수 있으니 참고 */
+    }
+
+    #first {
+      width: 1500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-color: aliceblue;
+    }
+
+    #container {
+    width: 1100px;
+    height: 50px auto;
+    background-color: lightcoral;
+    }
+
+    .box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #222;
+    margin: 20px;
+    display: inline-block;
+    background: url(../../../a_html/images/dog01.jpg);
+    background-repeat: no-repeat;
+    } 
+
+    /* 고정값이 1인경우 자동적으로 너비값으로 설정
+      >> 높이값의 경우 이미지의 원래비율에 따라 적용 
+    */
+    #bg1 {background-size: auto;}
+    #bg2 {background-size: 200px;}
+    #bg3 {background-size: 50%;}
+    #bg4 {background-size: 100% 100%;}
+    /* 요소안에 모든 이미지가 보이도록 하는 요소 */
+    #bg5 {background-size: contain;}
+    /* 배경이미지가 요소를 모두 덮도록 지정 */
+    #bg6 {background-size: cover;}
+
+  </style>
+</head>
+<body>
+
+  <!-- 
+  ! 1. background-color 속성
+
+  ! 2. background-clip 속성
+
+  ! 3, background-reapeat 속성
+      : 반복값 설정 (repeat, repeat-x,y, no-repeat)
+  ! 4. background-position 속성
+      : 배경이미지의 위치 조절
+
+  ! 5. backgroud-origin 속성
+      :배경이미지의 적용범위 설정
+  ! 6. background attachment 속성
+      : 
+
+  ! 7. background-size 속성
+
+  -->
+  
+  <div class="background" id="border">
+    border
+  </div>
+  <div class="background" id="padding">
+    padding
+  </div>
+  <div class="background" id="content">
+    content
+  </div>
+
+  <hr />
+  <div id="imgs">
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+  </div>
+
+<hr />
+<div class="img" id="first"></div>
+<div class="img"></div>
+
+<div id="container">
+  <div class="box" id="bg1"></div>
+  <div class="box" id="bg2"></div>
+  <div class="box" id="bg3"></div>
+  <div class="box" id="bg4"></div>
+  <div class="box" id="bg5"></div>
+  <div class="box" id="bg6"></div>
+</div>
+
+</body>
+</html>

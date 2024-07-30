@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text02.html</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      color: #ff0000;
+      background-color: #0f0;
+    }
+    p {
+      background-color: #ccc;
+      color: #000;
+    }
+    /** RGB 숫자 rgb(r, b, b) 각 영억의 값을 0부터 255 까지 */
+    /* alpha 값은 0 ~ 1 사이의 값으로 지정  */
+    h2{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0 ,0);
+    }
+    span {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .hello {
+      width: 400px;
+      background-color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .center{
+      text-align: center;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 16진수 숫자 숫자0 (검은색) / 알파벳f(흰색) -->
+  <!-- 6자리 RRGGBB -->
+  <h1>안녕하세요</h1>
+  <p>안녕하세요</p>
+  <h2>안녕하세요</h2>
+  <p>반갑습니다</p>
+  <span>hihihihih</span>
+  <!-- text-alilgn 속성 -->
+    <p class="hello">안녕하세요.</p>
+    <p class="hello center">안녕하세요.</p>
+    <p class="hello justify">안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.  안녕하세요.안녕하세요.안녕하세요.안녕하세요.  안녕하세요.안녕하세요.안녕하세요.   안녕하세요.안녕하세요.안녕하세요.  안녕하세요.    안녕하세요.</p>
+
+    <!-- line-height 속성 -->
+    <!-- 
+    기준이 현재 문단의 글씨 크기
+    EX) 글자 크기가 16px인 문단의 줄 간격
+    -->
+    <p class="hello line" style="line-height: 20px;">안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.  안녕하세요.안녕하세요.안녕하세요.안녕하세요.  안녕하세요.안녕하세요.안녕하세요.   안녕하세요.안녕하세요.안녕하세요.  안녕하세요.    안녕하세요.</p>
+
+    <div 
+      style=
+        "background-color: white; 
+        height: 100px; 
+        text-align: center;"
+    >
+      <p
+        style="line-height: 100px;"
+      >
+      세로정렬가운데
+      </p>
+    </div>
+
+    <div style="background-color: white;">
+      <!-- text decoration 속성 -->
+      <span style="text-decoration: ; background-color: white; color: black;">none</span>
+      <span style="text-decoration: underline; background-color: white; color: black;">underline</span>
+      <span style="text-decoration: overline; background-color: white; color: black;">overline</span>
+      <span style="text-decoration: line-through; background-color: white; color: black;">line through</span>
+    </div>
+
+<!-- text-shadow 속성
+    1. 가로거리
+    2. 세로거리
+    3. 번짐 정도
+    4. 색상
+-->
+
+  <div class="text-shadow" style="background-color: #ccc;">
+    <span style="text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5); color: #000000; ">Text 그림자</span>
+  </div>
+
+  <!-- text tranform -->
+  
+  <!-- letter & word spacing -->
+    <p style="letter-spacing: 3px;">lettre spacing</p>
+    <p style="word-spacing: 5px;">word spacing</p>
+
+  <!--text-indent 들여쓰기-->
+  <p style="text-indent: 20px;">text-indent 속성</p>
+</body>
+</html>

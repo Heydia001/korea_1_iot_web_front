@@ -1,0 +1,39 @@
+
+/* id 선택자:  # 기호 */
+#monday {
+  color: cornflowerblue ;
+}
+
+/* class 선택자 : .(마침표) */
+.git {
+  color: rgb(255, 72, 81) !important;
+}
+
+/** id 선택자가 class 선택자 보다 우선된다. */
+
+/* 태그(타입, 요소) 선택자 */
+h2 {
+  color: blue;
+}
+
+/** 제일 마지막에 작성된 것이 지정된다. */
+h1 {
+  color: green;
+}
+
+h1 {
+  color: rgb(29, 29, 29);
+}
+
+/*! 스타일 상속 */
+body {
+  font-size: 20px;
+  background-color: grey;
+}
+
+p {
+  font-size: 10px;
+  background-color: transparent;
+}
+
+/** transparent는 투명색을 지정하는 방법 */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position.html</title>
+  <style>
+    p{
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    /* 1. static 속성값은: 기본 web 문서의 흐름이다.*/
+    #para1 {
+      position: static;
+    }
+
+  /* 2. relative 속성값 */
+  /* 현재 위치의 웹 문서 흐름을 기준으로 위핏깂을 지정 */
+
+    #para2 {
+      position: relative;
+    }
+
+    /* 위쪽으로 마이너스 값 지정 시 위로 이동 */
+    /* #para3 {
+      position: relaitive;
+      left: 100px;
+      
+      top: -50px;
+    } */
+
+    /*#para4 {
+      position: fixed;
+      right: 30px;
+      top: 30px
+
+      width: 100px;
+      height: 100px;
+
+      background-color: #222;
+    } */
+
+  </style>
+</head>
+<body>
+  <p id="para1">This is paragraphy</p>
+  <p id="para2">This is paragraphy</p>
+  <p id="para3">This is paragraphy</p>
+  <p id="para4">This is paragraphy</p>
+</body>
+</html>

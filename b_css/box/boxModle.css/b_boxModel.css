@@ -1,0 +1,40 @@
+.box {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+  margin: 15px;
+
+  font-size: 10px;
+  text-align: center;
+
+  /* 높이 height값과 똑같이 지정하면 세로정렬  */
+  line-height: 100px;
+  
+  background-color: lightblue;
+  border-width: 2px;
+  border-width: medium;
+  border-width: thick;
+  border-width: thin;
+
+}
+.boxes {
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+  margin: 15px;
+
+  font-size: 10px;
+  text-align: center;
+
+  /* 높이 height값과 똑같이 지정하면 세로정렬  */
+  line-height: 100px;
+  
+  background-color: lightblue;
+  border-width: 2px;
+  border-width: medium;
+  border-width: thick;
+  border-width: thin;
+  border-style: solid;
+}

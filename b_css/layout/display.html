@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .block {
+        /* 블럭레벨 요소 */
+        display: block;
+        background-color: aqua;
+        
+        width: 100%;
+        margin: 10px, 0;
+        padding: 15px;
+        
+        text-align: center;
+      }
+
+      .inline{
+        /* 인라인 레벨 요소 */
+        display: inline;
+        background-color: rgb(86, 160, 80);
+
+        /* 너비와 높이 지정이 불가능 하다. */
+        /* pading과 margine이 좌우에만 적용된다. */
+
+        /* width: 100%;
+        height: 50px; */
+        /* width와 heigrh는 적용되지 않는다. */
+      
+        margin: 20px;
+        padding: 5px;
+      }
+
+      .inlineBlock{
+        display: inline-block;
+        /* 인라인 + 블럭 레벨 요소 */
+        /* - 인라인: 다른 요소와 같은 줄에 지정
+            - 블럭: 너비와 높이를 가짐 
+        */
+        background-color: blueviolet;
+        
+        width: 200px;
+        height: 200px;
+
+        text-align: center;
+        line-height: 200px;
+
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .none {
+        display: none;
+        /* 해당 화면에 표시 하지 않도록 요소 */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class ="block">BLock Elements</div>
+
+    <span class="inline">Inline Elements2</span>
+    <span class="inline">Inline Elements</span>
+
+      <!-- Inline Block 속성값 -->
+    <div class ="inlineBlock">Inline-Block Elements2</div>
+
+    <div class ="none">None Elements</div>
+  </body>
+  </html>
+</body>
+</html>

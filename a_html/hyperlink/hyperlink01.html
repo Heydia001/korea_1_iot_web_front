@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyperlink01.html</title>
+</head>
+<h1 id="hyperlink">하이퍼 링크</h1>
+
+<body>
+  <!-- '#'은 새로고침 기능 -->
+  <a href="#">텍스트 링크</a>
+  <a href="http://www.google.com">google 바로가기</a>
+
+  <!-- 이미지 링크 -->
+    <a href="https://www.naver.com/">
+      <img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F24155B3958F1BFA713" alt="네이버 로고">
+    </a>
+<hr/>
+
+<!-- a태그의 tatget 속성 -->
+  <a href="https://www.naver.com/" target="_self">
+    _self 속성값 사용
+  </a>
+<br />
+<!-- 새로운 탭에서 링크 이동 -->
+  <a href="https://www.naver.com/" target="_blank">
+    _blank 속성값 사용
+  </a>
+
+<!-- 절대경로와 상대경로 -->
+  <!-- 1. 절대 경로 -->
+  <h2 id="absolute">절대경로</h2>
+  <p>
+    <a href="http://www.w3.org">W3C</a>
+    <a href="http://www.google.org">Google</a>
+  </p>
+  <img src="현재.jpg" alt="현재 사진 디렉토리">
+
+  <!-- 
+      2.상대 경로
+
+      디렉토리(폴더)
+
+      -같은 디렉토리 내에 있는 경우
+      ./파일명
+
+      -상위 디렉토리에 있는 경우
+      ../파일명
+
+      -하위 디렉토리에 있는 경우
+      ./하위디렉토리명/
+  -->
+
+<h2 id="relative">상대 경로</h2>
+  <p>
+    <a href="./현재.jpg">현재폴더이미지</a>
+  </p>
+  <p>
+    <a href="./inner/하위.jpg">현재폴더이미지</a>
+  </p>
+  <p>
+    <a href="../상위.jpg">현재폴더이미지</a>
+  </p>
+  <img src="현재.jpg" alt="현재 폴더의 이미지">
+<hr />
+
+<!-- 현재 문서내에서의 위치 이동 링크 
+    이동할때 id와 #을 활용함 
+-->
+<a href="#hyperlink">h1 태그로 이동(문서의 맨 위)</a>
+<span>|</span>
+<a href="#absolute">절대경로로 이동</a>
+<span>|</span>
+<a href="#relative">상대경로로 이동</a>
+</body>
+</html>
