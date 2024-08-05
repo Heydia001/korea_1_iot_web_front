@@ -1,0 +1,136 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+hr{
+  border: 0.2px solid #ff9c1d;
+  margin: 0;
+}
+
+.subHeaderContainer{
+  margin: 0;
+  background-color: #313334;
+  width: 100%;
+  height: 37px;
+}
+
+.nav01 {
+  margin: 0px 40px;
+  display: flex;
+  list-style: none;
+  font-size: 11px;
+
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav01 a{
+  align-content: center;
+  color: #ffffff;
+  margin: 0 0 0 20px;
+  text-decoration: none;
+}
+
+.languages{
+  display: flex;
+
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.dropLanguages {
+  background-color: #555555;
+  align-items: stretch;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.magnifyingGlass01 img {
+  width: 37px;
+  height: 37px;
+  background-color:#ff9c1d;
+}
+
+.mianHeader ul{
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+
+  height: 88px;
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.mianHeader li a{
+  color: #313334;
+  font-weight: 600;
+  font-size: 20px;
+
+  flex-flow: row wrap;
+  text-decoration: none;
+}
+
+.mianHeader li img{
+  padding-right: 30px;
+}
+
+
+.mainVisualBanner {
+  height: 450px;
+  background-color: #ff9c1d;
+}
+
+.bannerButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bannerButton {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 5px;
+}
+
+.searchBar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  background-color: #009999;
+  align-items: center;
+  justify-content: center;
+}
+
+.totalSesearch{
+  color: #ffffff;
+  text-decoration: none;
+  align-content: center;
+  padding-right: 20px;
+}
+
+.mainSearchBar {
+  height: 50px;
+  width: 570px;
+  background-color: #ffffff;
+  color:#757575;
+  font-size: 13px;
+  font-weight: 400;
+
+  border-radius: 70px;
+  text-decoration: none;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.mainSearchBar a {
+  width: 30px;
+  height: 30px;
+}

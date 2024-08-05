@@ -1,0 +1,70 @@
+p {
+  font: 40px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+/* 브라우저 화면이 600px 보다 작은 화면에서는 20px로 줄임
+  600px 이하 (최대가 600px)
+
+  #미디어 쿼리 작성법
+  @media 조건 나열(and / , ){
+    해당 조건일때 실행할 코드 작성
+  }
+*/
+/* @media (max-width: 600px){
+  p {
+    font-size: 20px;
+  }
+} */
+
+/* 
+  브라우저 화면이 600px 보다 크거나
+  1000px 보다 작은 화면에서는 40px로 줄임
+*/
+@media (max-width: 1000px) and (min-width: 600px) {
+  p {
+    font-size: 40px;
+  }
+}
+
+.title {
+  background-color: lightblue;
+}
+
+@media (max-width: 1023px){
+  .title {
+    background-color: lightcoral;
+  }
+}
+
+@media (max-width: 639px){
+  .title {
+    background-color: lightgreen;
+  }
+}
+
+ /* 반응형에 따른 배치변화 */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display:flex;
+  transition: flex-direction 0.5s ease-in-out;
+}
+
+li {
+  width: 200px;
+
+  margin: 10px;
+  padding: 10px 20px;
+
+  background-color: lightblue;
+  justify-content:  center;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+  }
+}
