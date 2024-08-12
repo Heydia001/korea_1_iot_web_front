@@ -18,6 +18,7 @@ function sumArray(array){
   return sum;
 }
 
+
 console.log(sumArray(array)); //15
 
 //! 특정 수 이상의 요소 필터링
@@ -51,31 +52,34 @@ console.log(containElements([1,2,3,4,5], 3));
 
 //! 4. 배열 평균 구하기
 
-function findAverage(array) {
-  let length = array.length;
+
+let array01 = [1, 2, 3, 4, 5];
+function getAverage (array01) {
+  let length = array01.length;
   let sum = 0;
   for (let i = 0; i < length; i++){
-    sum += array[i];
+    sum += array01[i];
   }
-  return sum / length;
+  return sum / (length);
 }
 
-console.log(findAverage([10, 20, 30, 40, 50]));
+console.log(getAverage (array01));
 
 //! 5. 최댓값 찾는 문제
 // - 배열의 첫번째 요소를 max라는 변수에 담기
 // - 배열을 순회하면서 max보다 큰 값이 있을 경우 max를 해당 값으로 재할당
 
-function findMax(array) {
-  let max = array[0];
-  let length = array.length;
 
-  for (let i = 0; i < length; i++){
-    if (array[i] > max){
-      max = array[i];
+
+function GetMax (arr) {
+  let max = [];
+  let length = arr.length;
+  for(let i = 0; i < length; i++){
+    if(arr[i] > max) {
+      max = arr[i];
     }
   }
   return max;
 }
 
-console.log(findMax([10, 3, 45, 38, 6 ]));
+console.log(GetMax([10, 3, 45, 78, 6]));
