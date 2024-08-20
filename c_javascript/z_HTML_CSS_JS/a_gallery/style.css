@@ -1,6 +1,7 @@
 body {
   width: 640px;
   margin: 0, auto;
+  font-family: 'Helvetica' ;
 }
 
 h1 {
@@ -47,6 +48,7 @@ button {
 /* 선택자 A 선택자 B 
   >> 선택자B는 선택자  A내에 중첩된 자식요소
 */
+
 .thumb-bar img {
   display: block;
   width: 20%;

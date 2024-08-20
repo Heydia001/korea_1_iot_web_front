@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div id = "left-box" class="container">
+    <div id="date">
+      <p>Monady April 2024</p>
+    </div>
+    <div id="main-content">
+      <p id="weather-temp">-3 ℃</p>
+      <p id="city">seoul 🌤️</p>
+    </div>
+  </div>
+
+  <div id="right-box" class="container">
+    <div id="right-box-contents">
+     
+      <div id="right-box-top">
+          <label id="search">
+            <input type="search" id="search-input" placeholder="search" />
+            <button type="submit" id="search-input-emoji">
+              🔍
+            </button>
+          </label>
+      </div>
+
+
+      <div id="right-box-bottom">
+          <div id="weatherDetails">
+            <p>Weather Details</p>
+            <p id = "line"></p>
+            <div id="weatherDetails-list">
+              <ul id="detail-left">
+                <li>Max/Min Temp</li>
+                <li>Humidity</li>
+                <li>Wind</li>
+                <li>Cloudy</li>
+              </ul>
+              <ul id="detail-right">
+                <li>-4℃ / -3℃</li>
+                <li>29%</li>
+                <li>4.69km/h</li>
+                <li>1%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div data-cy="setting_toggle" class="toggle-btn">
+            <label class="switch">
+              <input type="checkbox" id="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+
+<script src="./main.js"></script>
+</body>
+</html>

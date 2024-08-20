@@ -1,0 +1,217 @@
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing : border-box;
+} */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url('./images/sunny.jpg') no-repeat;
+  background-size: cover;
+  
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0 ,0, 0.5);
+}
+
+#left-box {
+  position: relative;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#date {
+  font-size: 20px;
+}
+
+#date p {
+  margin-top: 0;
+}
+
+#main-content{
+  margin: 0;
+  padding: 0;
+
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+#weather-temp{
+  margin: 0;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+#city {  
+  font-weight: bold;
+  margin: 0;
+  font-size: 48px;
+  align-self: center;
+  padding-left: 20px;
+}
+
+#right-box {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px 0 0 0;
+
+  margin-right: 0;
+}
+
+#right-box-bottom{
+  margin: 50px;
+}
+
+#right-box-contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#right-box-top {
+  height: 30%;
+  margin: 50px;
+}
+
+#search{  
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-input{
+  
+  width: 90%;
+  height: 30px;
+  padding-left: 30px;
+  margin: 0;
+
+  background-color:  rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 0px;
+  border-radius: 20px 0 0 0;
+}
+
+#search-input-emoji{
+  width: 10%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color:  rgba(0, 0, 0, 0.3);
+  border: 0;
+  cursor: pointer;
+}
+
+
+#search-input::placeholder {
+  color:#000000;
+  font-size: 17px;
+}
+
+#search-input::-webkit-input-placeholder {
+  color:#000000;
+  font-size: 17px;
+}
+
+#search-input::-ms-input-placeholder {
+  color:#000000;
+  font-size: 17px;
+}
+
+#weatherDetails {
+  font-weight: bold;
+  font-size: 24px;
+  }
+  
+#weatherDetails p{
+  font-size: 40px;
+}
+
+#line {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  border: 0.5px solid black;
+  margin: 0;
+}
+
+#weatherDetails-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+    
+#detail-left {
+  padding: 0;
+  list-style: none;  
+  flex-direction: row;
+}
+
+#detail-right {
+  font-weight: 300;
+  text-align: right;
+  list-style: none;  
+  flex-direction: row;
+}
+
+.toggle-btn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.toggle-btn .switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 28px;
+}
+
+.toggle-btn .slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0px;
+  background-color: #ccc;
+  transition: all 0.4s ease 0s;
+  border-radius: 34px;
+}
+
+.toggle-btn .slider::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: all 0.4s ease 0s;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px 0px;
+}
+
+.toggle-btn input:checked + .slider {
+  background-color: #000000;
+}
+
+.toggle-btn input:checked + .slider::before {
+  transform: translateX(20px);
+}
