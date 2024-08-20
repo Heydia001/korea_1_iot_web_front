@@ -5,7 +5,7 @@ const city = "Seoul";
 const apikey = "cbc4ab3d9e223a493f149d87a4a8fec7";
 const lang = "kr";
 
-const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&lang=${lang}&units=metric`;
+// const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&lang=${lang}&units=metric`;
 
 async function getWeatherData() {
     try {
