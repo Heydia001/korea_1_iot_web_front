@@ -2,10 +2,9 @@
 
 const city = "Seoul";
 // >> input창에서 입력받을 경우 capitalize 사용
-const apikey = "cbc4ab3d9e223a493f149d87a4a8fec7";
+const apikey = '';
 const lang = "kr";
 
-// const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&lang=${lang}&units=metric`;
 
 async function getWeatherData() {
     try {
