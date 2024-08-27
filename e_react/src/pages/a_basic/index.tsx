@@ -7,6 +7,10 @@ import Component01 from "./b_Component/Component01";
 //! index라는 이름을 가진 파일은 폴더명까지만 명시 가능
 import MainComponent from "./b_Component";
 import MainJSX from "./c_JSX";
+import Props02 from "./d_Props/Props02";
+import Rendering01 from "./f_Rendering/Rendering01";
+import Rendering02 from "./f_Rendering/Rendering02";
+import Handler01 from "./g_Handler/Handler01";
 
 export default function index() {
   return (
@@ -31,6 +35,15 @@ export default function index() {
 
       <h2>d_Props 리액트의 데이터 전달 - Props (부모 - 자식)</h2>
       <Props01 />
+      <Props02 />
+
+      <h2>f_Rendering 리액트 조건부 렌더링</h2>
+
+      <Rendering01 />
+      <Rendering02 />
+      <h2>g_Handler 리액트의 이벤트 핸들러</h2>
+      <Handler01 />
+
     </div>
   );
 }
