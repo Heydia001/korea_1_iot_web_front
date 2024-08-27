@@ -11,6 +11,8 @@ import Props02 from "./d_Props/Props02";
 import Rendering01 from "./f_Rendering/Rendering01";
 import Rendering02 from "./f_Rendering/Rendering02";
 import Handler01 from "./g_Handler/Handler01";
+import Handler02 from "./g_Handler/Handler02";
+import Handler03 from "./g_Handler/Handler03";
 
 export default function index() {
   return (
@@ -42,7 +44,10 @@ export default function index() {
       <Rendering01 />
       <Rendering02 />
       <h2>g_Handler 리액트의 이벤트 핸들러</h2>
+
       <Handler01 />
+      <Handler02 />
+      <Handler03 />
 
     </div>
   );
