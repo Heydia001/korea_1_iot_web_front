@@ -32,6 +32,19 @@ export default function Handler03() {
       <Button onButtonClick={buttonHandler}>
         이벤트 핸들러(기능 전달)
       </Button>
+      <hr />
+      {/* 기본 동작 방지! */}
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        console.log('전송완료 - 기본동작은 방지');
+      }}>
+        <input type="text" />
+        {/* 
+          onSubmit 핸들러의 경우 기본으로 데이터를 전송하고 
+            새로고침하는 기능을 가짐
+        */}
+        <button type='submit'>전송</button>
+      </form>
     </div>
   )
 }
