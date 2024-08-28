@@ -1,5 +1,8 @@
-
 import React, { useState } from "react";
+
+// Prettier 플러그인 사용 코드 정렬(포맷터)
+// ctrl + a
+// ctrl + k + f
 
 //! React 이벤트 객체의 타입 정의
 
@@ -40,7 +43,6 @@ export default function UseState03() {
       console.log('Enter 키가 눌려졌습니다.');
       // 입력된 내용을 배열의 요소에 추가
       // , 다양한 로직 활용
-      setEnter(e.currentTarget.value);
     }
   };
 
