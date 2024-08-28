@@ -112,7 +112,7 @@ export default function UseState04() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // 이벤트 객체에서 입력 필드의 이름과 값을 추출
     const { name, value } = e.target;
-
+    
     setFormData({
       // 기존 폼 데이터의 값을 복사 (스프레드 연산자)
       ...formData,

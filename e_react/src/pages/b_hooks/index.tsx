@@ -3,6 +3,9 @@ import UseState01 from "./a_UseState/UseState01";
 import UseState02 from "./a_UseState/UseState02";
 import UseState03 from "./a_UseState/UseState03";
 import UseState04 from "./a_UseState/UseState04";
+import UseState05 from "./a_UseState/UseState05";
+import UseState06 from "./a_UseState/UseState06";
+import ChildComponent from "./a_UseState/ChildComponent";
 
 function Index() {
   return (
@@ -16,8 +19,9 @@ function Index() {
       <UseState02 />
       <UseState03 />
       <UseState04 />
-      
-      
+      <UseState05 />
+      <UseState06 />
+      {/* <ChildComponent /> */}
     </div>
   );
 }
