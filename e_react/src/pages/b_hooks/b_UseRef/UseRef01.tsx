@@ -1,4 +1,7 @@
 import React, { useRef, useState } from "react";
+//? 렌더링을 하면 결과값을 보여준다.
+//? useStatus는 즉시즉시 렌더링을 하는 것이 특징.
+//? Ref는 무언가를 찾아 갈 수 있게 해주는 역할을 하고 있다.
 
 //! useRef
 // : use + reference(참조)
