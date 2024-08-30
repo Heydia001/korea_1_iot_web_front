@@ -16,15 +16,27 @@ import UseEffect02 from "./c_UseEffect/UseEffect02";
 import UseMemo01 from "./d_Use/UseMemo01";
 import UseMemo02 from "./d_Use/UseMemo02";
 import UseCallback from "./d_Use/UseCallback";
+import UseReducer01 from "./e_UseReducer/UseReducer01";
+import UseReducer02 from "./e_UseReducer/UseReducer02";
+import Custom01 from "./f_CuctomHook/Custom01";
+import Custom02 from "./f_CuctomHook/Custom02";
+import { useLocation } from "react-router-dom";
 
 function Index() {
+  const location = useLocation();
+  const { username } = location.state || {};
+  
   return (
     <div>
       <h1 style={{ backgroundColor: "black", color: "white" }}>
-        리액트의 Hook
+        리액트의 Hooks
       </h1>
+       {username}
+      <h2>리액트 Hooks - customHook</h2>
+      <Custom01 />
+      <Custom02 />
 
-      <h2>리액트 Hook - useState</h2>
+      <h2>리액트 Hooks - useState</h2>
       <UseState01 />
       <UseState02 />
       <UseState03 />
@@ -51,6 +63,9 @@ function Index() {
 
       <UseCallback />
 
+      <h2>리액트 s - UseReducer</h2>
+      <UseReducer01 />
+      <UseReducer02 />
     </div>
   );
 }
