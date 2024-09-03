@@ -26,7 +26,7 @@ function ChildComponent(props: { name: string }) {
 type MultiPropsType = {
   name: string;
   colorProps: string;
-};
+};    
 
 // 여러 개의 Props 전달과 비구조화 할당(구조 분해)
 // : 객체나 배열에서 해당 묶음 구조를 풀이해서 작성
